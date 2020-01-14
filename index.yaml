@@ -1,0 +1,64 @@
+apiVersion: v1
+entries:
+  gerrit-master:
+  - apiVersion: v1
+    appVersion: 3.0.3
+    created: "2020-01-14T16:45:04.379493+03:00"
+    description: |-
+      Gerrit is a free, web-based team code collaboration tool. Software developers
+      in a team can review each other's modifications on their source code using
+      a Web browser and approve or reject those changes. It integrates closely with
+      Git, a distributed version control system. [1]
+
+      [1](https://en.wikipedia.org/wiki/Gerrit_(software)
+    digest: 7b15c33c6911101e241786d9fa662704d4b6bb195fd6fc18fe4801e641953483
+    home: https://gerrit.googlesource.com/k8s-gerrit/+/master/helm-charts/gerrit-slave
+    icon: http://commondatastorage.googleapis.com/gerrit-static/diffy-w200.png
+    keywords:
+    - gerrit
+    - git
+    maintainers:
+    - email: thomas.draebing@sap.com
+      name: Thomas Draebing
+    - email: matthias.sohn@sap.com
+      name: Matthias Sohn
+    - email: sasa.zivkov@sap.com
+      name: Sasa Zivkov
+    - email: christian.halstrick@sap.com
+      name: Christian Halstrick
+    name: gerrit-master
+    sources:
+    - https://gerrit.googlesource.com/k8s-gerrit/+/master/
+    urls:
+    - https://mike-sirs.github.io/helm-repos/gerrit-master-0.2.0.tgz
+    version: 0.2.0
+  gerrit-slave:
+  - apiVersion: v1
+    appVersion: 3.0.3
+    created: "2020-01-14T16:45:04.381133+03:00"
+    description: |-
+      The Gerrit slave serves as a read-only Gerrit instance to serve repositories
+      that it receives from a Gerrit master instance via replication. It can be
+      used to reduce the load on Gerrit master instances.
+    digest: 3f267782c46044dc8ac593fa9df7a95bd6bbd615b84d64d233e3c4367f2b580c
+    home: https://gerrit.googlesource.com/k8s-gerrit/+/master/helm-charts/gerrit-slave
+    icon: http://commondatastorage.googleapis.com/gerrit-static/diffy-w200.png
+    keywords:
+    - gerrit
+    - git
+    maintainers:
+    - email: thomas.draebing@sap.com
+      name: Thomas Draebing
+    - email: matthias.sohn@sap.com
+      name: Matthias Sohn
+    - email: sasa.zivkov@sap.com
+      name: Sasa Zivkov
+    - email: christian.halstrick@sap.com
+      name: Christian Halstrick
+    name: gerrit-slave
+    sources:
+    - https://gerrit.googlesource.com/k8s-gerrit/+/master
+    urls:
+    - https://mike-sirs.github.io/helm-repos/gerrit-slave-0.2.0.tgz
+    version: 0.2.0
+generated: "2020-01-14T16:45:04.375681+03:00"
